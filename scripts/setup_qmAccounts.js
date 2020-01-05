@@ -17,7 +17,7 @@ const extractAccountDetails = async function (op_system) {
     console.log(`Node${i} pub key: `, pubkey.toString());
     pubKeys.push(pubkey.toString());
 
-    var node4key = JSON.parse(fs.readFileSync(`../quorum-maker/${PROJECT_NAME}/node${i}/node/qdata/keystore/node${i}.key`));
+    var node4key = JSON.parse(fs.readFileSync(`../quorum-maker/${PROJECT_NAME}/node${i}/node/qdata/keystore/node${i}key`));
     var address = "0x" + node4key.address;
     console.log(`Node${i} address: `, address);
     addresses.push(address);
